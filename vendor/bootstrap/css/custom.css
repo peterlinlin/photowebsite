@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+ background-image:  url("../../../photos/0000867_0000867-R1-019-8.jpg");
+
+ /* Set a specific height */
+ height: 100%;
+
+ /* Position and center the image to scale nicely on all screens */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+
+}
+
+.hero-text{
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo-showcase{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+
+}
+
+
+
+.photo-frame{
+  border:5px solid black;
+  margin: 20px;
+
+}
+img {
+  width: 100%;
+  height: auto;
+}
