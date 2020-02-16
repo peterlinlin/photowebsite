@@ -38,14 +38,19 @@ body, html {
 
 }
 
-
-
 .photo-frame{
   border:5px solid black;
   margin: 20px;
 
 }
-img {
+
+.logo{
+height:auto;
+width:30px;
+
+
+}
+.gallery{
   width: 100%;
   height: auto;
 }
