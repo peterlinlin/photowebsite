@@ -24,6 +24,7 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(70%, 350%);
   border: 1px solid white;
   padding-left: 20px;
@@ -43,7 +44,7 @@ body, html {
 }
 
 .photo-frame{
-  border:5px solid black;
+  border:5px solid #fffdd0;
   margin: 20px;
 
 }
