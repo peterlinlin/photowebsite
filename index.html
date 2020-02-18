@@ -13,6 +13,8 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/custom.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./custom.js"></script>
 
 </head>
 
@@ -23,8 +25,8 @@
     <div class="container">
 
       <a class="navbar-brand" href="index.html">
-      <img = "logo" src ="./photos/lin.png" class="logo" />
-    </a>
+        <img = "logo" src ="./photos/lin.png" class="logo" />
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,15 +42,17 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href=""/pages/contactme.html">Contact Me</a>
+            <a class="nav-link" href="/pages/contactme.html">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+
   <div class="hero-image">
-    <div class="container">
+    <div class="col-med-12">
       <div class="row text-center">
         <div class="hero-text">
           <h1>My name is Peter Lin</h1>
@@ -62,47 +66,34 @@
 
 
   <section = "container">
+    <div id = "gallery" class="photo-showcase">
+      <div class="col-sm-4">
+        <figure class="photo-frame">
+          <img src ="./photos/gallery/dolores-park-sf.jpg" class="gallery"/>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="photo-frame">
+          <img src ="./photos/gallery/img101.jpg" class="gallery"/>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="photo-frame">
+          <img src ='./photos/gallery/img116.jpg' class="gallery"/>
+        </figure>
+      </div>
 
-    <div class="photo-showcase">
+    </div>
+  </section>
+  <script>
+  loadTest();
+  loadGallery();
+  </script>
 
-        <div class="col-sm-4">
-          <figure class="photo-frame">
-            <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-          </div>
-          <div class="col-sm-4">
-            <figure class="photo-frame">
-              <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-            </div>
-            <div class="col-sm-4">
-              <figure class="photo-frame">
-                <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-              </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+</body>
 
-
-
-              <div class="col-sm-4">
-                <figure class="photo-frame">
-                  <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-                </div>
-                <div class="col-sm-4">
-                  <figure class="photo-frame">
-                    <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-                  </div>
-                  <div class="col-sm-4">
-                    <figure class="photo-frame">
-                      <img src ="./photos/0000867_0000867-R1-019-8.jpg" class="gallery"/>
-                    </div>
-
-
-
-                  </div>
-              </section>
-
-              <!-- Bootstrap core JavaScript -->
-              <script src="vendor/jquery/jquery.slim.min.js"></script>
-              <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-            </body>
-
-            </html>
+</html>
