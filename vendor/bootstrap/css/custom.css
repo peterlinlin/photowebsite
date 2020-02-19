@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    background-color: #fffdd0;
+    background-color: #fffeea;
 }
 
 /* Hero image + TEXT */
@@ -38,21 +38,28 @@ body, html {
   text-transform: lowercase;
 
 }
+/* parent classes*/
+
+.case{
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
 
 /* Gallery CSS*/
 
-.photo-showcase{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+.case.photo-gallery{
+
   justify-content: center;
 
 }
 
 .photo-frame{
-  border:5px solid white;
+  border:5px solid #fffeea;
   margin: 20px;
-
+  margin-top: 2rem;
+  border-radius: 5px;
 }
 
 .logo{
@@ -65,8 +72,23 @@ width:30px;
   height: auto;
 }
 
+.gallery-backdrop{
+  margin-top: 100px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
 /*navbar*/
 
 .navbar-custom{
-  background-color: #fffdd0;
+  background-color: #fffeea;
+}
+
+/* profile picture */
+.case.profile-pic{
+  justify-content: left;
 }
