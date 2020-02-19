@@ -6,7 +6,7 @@ function loadTest(){
   for(var i = 0; i < 3; i++){
     $( "<div class='col-sm-4'>" +
     "<figure class='photo-frame'>" +
-    "<img src=' " +
+    "<img src=' ../" +
     folder +
     image +
     "' class='gallery'" +
@@ -36,17 +36,18 @@ function loadTest(){
     $.ajax({
       url : folder,
       success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-          if( val.match(/\.(jpe?g|png|gif)$/) ) {
-            $("<div class='col-sm-4'>" +
+        $(data).find("a:contains(.jpg)").each(function(){
+        // will loop through
+        var images = $(this).attr("href");
+            $("#gallery").append("<div class='col-sm-4'>" +
             "<figure class='photo-frame'>" +
             "<img src=' " +
             folder +
-            val +
+            images +
             "' class='gallery'/>" +
             "</figure>" +
-            "</div>" ).appendTo("#gallery");
-          }
+            "</div>" );
+
         });
       }
     });

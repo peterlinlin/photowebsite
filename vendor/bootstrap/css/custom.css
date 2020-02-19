@@ -1,6 +1,10 @@
 body, html {
     height: 100%;
+    background-color: #fffdd0;
 }
+
+/* Hero image + TEXT */
+
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -35,6 +39,8 @@ body, html {
 
 }
 
+/* Gallery CSS*/
+
 .photo-showcase{
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +50,7 @@ body, html {
 }
 
 .photo-frame{
-  border:5px solid #fffdd0;
+  border:5px solid white;
   margin: 20px;
 
 }
@@ -57,4 +63,10 @@ width:30px;
 .gallery{
   width: 100%;
   height: auto;
+}
+
+/*navbar*/
+
+.navbar-custom{
+  background-color: #fffdd0;
 }
