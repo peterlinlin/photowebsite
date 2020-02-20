@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     background-color: #fffeea;
+    padding-top: 2rem;
 }
 
 /* Hero image + TEXT */
