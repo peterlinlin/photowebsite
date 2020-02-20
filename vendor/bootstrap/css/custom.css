@@ -49,9 +49,9 @@ body, html {
 /* image grid*/
 
 .row.image{
-  display: flex;
-  flex: wrap;
-  padding:0 4px;
+    display: flex;
+    flex: wrap;
+    padding:0 4px;
 }
 
 .imageColumn{
@@ -116,6 +116,7 @@ width:30px;
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
+
 }
 
 /*navbar*/
