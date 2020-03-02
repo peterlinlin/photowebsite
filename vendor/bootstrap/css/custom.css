@@ -29,7 +29,6 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(70%, 350%);
   border: 1px solid white;
   padding-left: 20px;

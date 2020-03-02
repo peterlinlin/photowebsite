@@ -52,3 +52,10 @@ function loadTest(){
       }
     });
   };
+
+function loadImageGrid(){
+  var array = [];
+  $('<img />')
+      .attr('src', "./photos/gallery/")
+      .appendTo('array')
+    }
